@@ -1,0 +1,133 @@
+# Copyright (C) 2015 BuddyPress Member Types extended
+# This file is distributed under the same license as the BuddyPress Member Types extended package.
+msgid ""
+msgstr ""
+"Project-Id-Version: BuddyPress Member Types extended 1.0.0-alpha\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/bp-mt-extended\n"
+"POT-Creation-Date: 2015-02-19 19:21:13+00:00\n"
+"PO-Revision-Date: 2015-02-19 20:21+0100\n"
+"Last-Translator: imath <mathchristo@yahoo.fr>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: bp-mt-extended.php:221
+msgid "BuddyPress Member Types extended requires at least version %s of BuddyPress."
+msgstr "BuddyPress Member Types extended a besoin a minima de la version %s de BuddyPress"
+
+#: bp-mt-extended.php:231
+msgid ""
+"BuddyPress Member Types extended requires to be activated on the blog where BuddyPress is "
+"activated."
+msgstr ""
+"BuddyPress Member Types extended a besoin d&#39;être activé sur le même blog que BuddyPress"
+
+#: bp-mt-extended.php:235
+msgid ""
+"BuddyPress Member Types extended and BuddyPress need to share the same network configuration."
+msgstr ""
+"BuddyPress Member Types extended et BuddyPress ont besoin de partager les mêmes réglages de "
+"réseau."
+
+#: bp-mt-extended.php:262
+msgctxt "Member types admin page title"
+msgid "Member Types"
+msgstr "Types de membre"
+
+#: bp-mt-extended.php:263
+msgctxt "Admin Users menu"
+msgid "Member Types"
+msgstr "Types de membre"
+
+#: bp-mt-extended.php:286
+msgid "Name of your member type."
+msgstr "Nom de votre type de membre"
+
+#: bp-mt-extended.php:287
+msgid "Saving the member type..."
+msgstr "Enregistrement du type de membre..."
+
+#: bp-mt-extended.php:288
+msgid "Success: type saved."
+msgstr "Type sauvegardé."
+
+#: bp-mt-extended.php:289
+msgid "Error: type not saved"
+msgstr "Erreur: type non sauvegardé"
+
+#: bp-mt-extended.php:290
+msgid "Error: type not deleted"
+msgstr "Erreur: type non supprimé"
+
+#: bp-mt-extended.php:291
+msgid "Editing: %s"
+msgstr "Edition de: %s"
+
+#: bp-mt-extended.php:307
+msgid "Member Types"
+msgstr "Types de membres"
+
+#: bp-mt-extended.php:310
+msgid "Add your type in the field below and hit the return key to save it."
+msgstr ""
+"Ajoutez votre type dans le champ ci-dessous et utilisez la touche entrée pour le sauvegarder."
+
+#: bp-mt-extended.php:311
+msgid "To update a type, select it in the list, edit the name and hit the return key to save it."
+msgstr ""
+"Pour mettre à jour un type, sélectionner le dans la liste, éditer son nom et utilisez la touche "
+"entrée pour mettre à jour."
+
+#: bp-mt-extended.php:320
+msgid "Edit type"
+msgstr "Modifier type"
+
+#: bp-mt-extended.php:320
+msgid "Delete type"
+msgstr "Supprimer type"
+
+#: bp-mt-extended.php:452 bp-mt-extended.php:724
+msgid "Member types"
+msgstr "Types de membre"
+
+#: bp-mt-extended.php:601 bp-mt-extended.php:603
+msgid "Change member type to&hellip;"
+msgstr "Changer le type du membre pour&hellip;"
+
+#: bp-mt-extended.php:608
+msgid "Change"
+msgstr "Modifier"
+
+#: bp-mt-extended.php:635
+msgid "%s members had their type changed."
+msgstr "%s membres ont vu leur type modifié."
+
+#: bp-mt-extended.php:636
+msgid "%s member had his type changed."
+msgstr "%s membre a vu son type modifié."
+
+#. Plugin Name of the plugin/theme
+msgid "BuddyPress Member Types extended"
+msgstr "BuddyPress Member Types extended"
+
+#. Plugin URI of the plugin/theme
+msgid "http://imathi.eu/tag/bpmt-extended"
+msgstr "http://imathi.eu/tag/bpmt-extended"
+
+#. Description of the plugin/theme
+msgid "Extends the BuddyPress member types, to add different UIs in Admin or front end"
+msgstr ""
+"Enrichi la fonctionnalité des types de membre de BuddyPress pour lui ajouter différentes UI que "
+"ce soit dans le back office ou le front office"
+
+#. Author of the plugin/theme
+msgid "imath"
+msgstr "imath"
+
+#. Author URI of the plugin/theme
+msgid "http://imathi.eu"
+msgstr "http://imathi.eu"
