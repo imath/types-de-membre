@@ -302,9 +302,7 @@ class BP_MT_Extended {
 	public function admin_page() {
 		?>
 		<div class="wrap">
-
-			<?php screen_icon( 'users' ); ?>
-			<h2><?php esc_html_e( 'Member Types', 'bp-mt-extended' ) ;?></h2>
+			<h1><?php esc_html_e( 'Member Types', 'bp-mt-extended' ) ;?></h1>
 
 			<p class="description bpmt-guide">
 				<?php esc_html_e( 'Add your type in the field below and hit the return key to save it.', 'bp-mt-extended' ) ;?>
