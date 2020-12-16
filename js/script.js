@@ -3,14 +3,20 @@
 		document.querySelector( '#member-types-toggler' ).addEventListener( 'click', function( event ) {
 			event.preventDefault();
 
-			var nav = event.target.closest( 'ul' );
+			var item = event.target, nav;
 
-			if ( '#open' === event.target.getAttribute( 'href' ) ) {
+			if ( 'SPAN' === item.nodeName ) {
+				item = event.target.parentElement;
+			}
+
+			nav = item.closest( 'ul' );
+
+			if ( '#open' === item.getAttribute( 'href' ) ) {
 				nav.classList.add( 'opened' );
-				event.target.setAttribute( 'href', '#close' );
+				item.setAttribute( 'href', '#close' );
 			} else {
 				nav.classList.remove( 'opened' );
-				event.target.setAttribute( 'href', '#open' );
+				item.setAttribute( 'href', '#open' );
 			}
 		} );
 	};
