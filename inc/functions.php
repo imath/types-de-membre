@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Globals.
+ * Plugin Generic Functions.
  *
  * @package Types de membre
  * @subpackage \inc\functions
@@ -30,23 +30,51 @@ function types_de_membre_version() {
 	return types_de_membre()->version;
 }
 
-// Legacy
-function types_de_membre_directory_tabs() {
-	printf(
-		'<li id="members-types" class="no-ajax">
-			<a href="#">%s</a>
-		</li>',
-		esc_html__( 'Types de membre', 'types-de-membre' )
+/**
+ * Returns the plugin's CSS URL.
+ *
+ * @since 2.0.0
+ */
+function types_de_membre_css_url() {
+	return trailingslashit( types_de_membre()->url ) . 'css';
+}
+
+/**
+ * Returns the plugin's JS URL.
+ *
+ * @since 2.0.0
+ */
+function types_de_membre_js_url() {
+	return trailingslashit( types_de_membre()->url ) . 'js';
+}
+
+/**
+ * Registers the plugin's style.
+ *
+ * @since 2.0.0
+ */
+function types_de_membre_register_style() {
+	wp_register_style(
+		'types-de-membre',
+		sprintf( '%1$s/style%2$s.css', types_de_membre_css_url(), bp_core_get_minified_asset_suffix() ),
+		array(),
+		types_de_membre_version()
 	);
 }
-add_action( 'bp_members_directory_member_types', 'types_de_membre_directory_tabs' );
+add_action( 'bp_enqueue_scripts', 'types_de_membre_register_style', 1 );
 
-// Nouveau
-function types_de_membre_directory_nav_items( $nav_items = array() ) {
-	if ( isset( $nav_items['types'] ) ) {
-		$nav_items['types']['li_class'] = array( 'no-ajax', 'last' );
-	}
-
-	return $nav_items;
+/**
+ * Registers the plugin's script.
+ *
+ * @since 2.0.0
+ */
+function types_de_membre_register_script() {
+	wp_register_script(
+		'types-de-membre',
+		sprintf( '%1$s/script%2$s.js', types_de_membre_js_url(), bp_core_get_minified_asset_suffix() ),
+		array(),
+		types_de_membre_version(),
+		true
+	);
 }
-add_filter( 'bp_nouveau_get_members_directory_nav_items', 'types_de_membre_directory_nav_items', 10, 1 );
+add_action( 'bp_enqueue_scripts', 'types_de_membre_register_script', 2 );

@@ -1,0 +1,36 @@
+#buddypress .bp-nav-wrapper {
+	position: relative;
+}
+
+#buddypress .dir-navs ul.types-nav {
+	float: right;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+#buddypress .dir-navs ul.types-nav li span.select-arrow {
+	padding: 0;
+}
+
+#buddypress .dir-navs ul.types-nav li ul.member-types {
+	position:absolute;
+	display: none;
+	background: #FFF;
+	z-index: 2;
+	border: solid 1px #000;
+	border-top-color: #FFF;
+	margin-left: -1px;
+}
+
+#buddypress .dir-navs ul.types-nav li ul.member-types li {
+	float:left;
+	width: 100%;
+}
+
+#buddypress .dir-navs ul.types-nav.opened li ul.member-types {
+	display: block;
+}
+
+#buddypress .dir-navs ul.types-nav.opened li span.select-arrow {
+	transform: rotate(180deg);
+}
