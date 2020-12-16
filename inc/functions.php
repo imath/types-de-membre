@@ -57,7 +57,7 @@ function types_de_membre_register_style() {
 	wp_register_style(
 		'types-de-membre',
 		sprintf( '%1$s/style%2$s.css', types_de_membre_css_url(), bp_core_get_minified_asset_suffix() ),
-		array(),
+		array( 'dashicons' ),
 		types_de_membre_version()
 	);
 }

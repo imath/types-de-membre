@@ -1,6 +1,8 @@
 <?php
 /**
- * Plugin Template Functions.
+ * Plugin Template for the members directory nav.
+ *
+ * It's used when the BP Nouveau template pack is active.
  *
  * @package Types de membre
  * @subpackage \templates\buddypress\common\nav\directory-nav
