@@ -54,6 +54,10 @@ final class Types_De_Membre {
 		require $inc_path . 'globals.php';
 		require $inc_path . 'functions.php';
 		require $inc_path . 'templates.php';
+
+		if ( is_admin() ) {
+			require $inc_path . 'admin.php';
+		}
 	}
 
 	/**
