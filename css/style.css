@@ -25,6 +25,11 @@
 	margin-left: -1px;
 }
 
+#buddypress .item-list-tabs ul.types-nav li ul.member-types {
+	border-color: #CCC;
+	border-top-color: #FFF;
+}
+
 #buddypress .dir-navs ul.types-nav li ul.member-types li,
 #buddypress .item-list-tabs ul.types-nav li ul.member-types li {
 	float:left;
