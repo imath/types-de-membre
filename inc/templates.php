@@ -25,7 +25,7 @@ function types_de_membre_template_stack( $template_stack = array() ) {
 	}
 
 	$template_pack_dir       = trailingslashit( bp_get_theme_compat_dir() ) . 'buddypress';
-	$template_pack_dir_index = array_search( $template_pack_dir, $template_stack );
+	$template_pack_dir_index = array_search( $template_pack_dir, $template_stack, true );
 
 	// Only override BP Template pack.
 	array_splice(
@@ -197,9 +197,12 @@ function types_de_membre_directory_nav() {
 	if ( $current_member_type ) {
 		$active_descendant = 'member-type-' . $current_member_type;
 	}
+
+	// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 	?>
 	<ul class="component-navigation types-nav" role="listbox" aria-activedescendant="<?php echo esc_attr( $active_descendant ); ?>">
 		<?php echo types_de_membre_get_directory_nav_items( $current_member_type ); ?>
 	</ul>
 	<?php
+	// phpcs:enable WordPress.Security.EscapeOutput.OutputNotEscaped
 }
