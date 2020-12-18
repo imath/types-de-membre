@@ -1,6 +1,6 @@
 <?php
 /**
- * Types de membre: description of the plugin.
+ * Types de membre: Adds a dropdown control to filter the BuddyPress Members directory by types.
  *
  * @package   Types de membre
  * @author    imath
@@ -10,7 +10,7 @@
  * @buddypress-plugin
  * Plugin Name:       Types de membre
  * Plugin URI:        https://github.com/imath/types-de-membre
- * Description:       Description de l'extension.
+ * Description:       Ajoute un liste déroulante pour filtrer le répertoire des membres par type.
  * Version:           2.0.0-alpha
  * Author:            imath
  * Author URI:        https://imathi.eu
@@ -69,7 +69,7 @@ final class Types_De_Membre {
 	 */
 	public static function start() {
 		// If the single instance hasn't been set, set it now.
-		if ( null == self::$instance ) {
+		if ( null === self::$instance ) {
 			self::$instance = new self();
 		}
 
