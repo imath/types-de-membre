@@ -42,7 +42,7 @@ function types_de_membre_is_install() {
  *
  * @return boolean True if it's a first install or not. False otherwise.
  */
-function types_de_member_is_update() {
+function types_de_membre_is_update() {
 	$db_version = types_de_membre_get_db_version();
 	$version    = types_de_membre_version();
 
@@ -97,8 +97,7 @@ function types_de_membre_update_plugin() {
 			// Just in case something went wrong keep the original values for a time.
 			set_site_transient( 'bp_mt_extended_terms_data', $bp_mte_types, DAY_IN_SECONDS );
 		}
-
-	} else if ( types_de_member_is_update() ) {
+	} elseif ( types_de_membre_is_update() ) {
 		$needs_version_bump = true;
 	}
 
