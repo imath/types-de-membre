@@ -10,7 +10,7 @@
  * Plugin Name:       BuddyPress Member Types extended
  * Plugin URI:        http://imathi.eu/tag/bpmt-extended
  * Description:       Extends the BuddyPress member types, to add different UIs in Admin or front end
- * Version:           1.0.0-alpha
+ * Version:           1.0.0
  * Author:            imath
  * Author URI:        http://imathi.eu
  * Text Domain:       bp-mt-extended
@@ -118,7 +118,7 @@ class BP_MT_Extended {
 	private function setup_globals() {
 
 		// Define a global that will hold the current version number
-		$this->version       = '1.0.0-alpha';
+		$this->version       = '1.0.0';
 
 		// Define a global to get the textdomain of your plugin.
 		$this->domain        = 'bp-mt-extended';
