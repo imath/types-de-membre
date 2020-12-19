@@ -56,10 +56,35 @@ function types_de_membre_js_url() {
 function types_de_membre_register_style() {
 	wp_register_style(
 		'types-de-membre',
-		sprintf( '%1$s/style%2$s.css', types_de_membre_css_url(), bp_core_get_minified_asset_suffix() ),
+		sprintf( '%s/style.css', types_de_membre_css_url() ),
 		array( 'dashicons' ),
 		types_de_membre_version()
 	);
+
+	if ( 'twentytwentyone' === get_template() ) {
+		wp_add_inline_style(
+			'types-de-membre',
+			'#buddypress .dir-navs ul.types-nav li,
+			#buddypress .item-list-tabs ul.types-nav li {
+				border: 1px solid var(--global--color-primary);
+				background-color: var(--global--color-white-90);
+				color: var(--form--color-text);
+			}
+
+			#buddypress .dir-navs ul.types-nav li > a:hover span.select-arrow:before,
+			#buddypress .dir-navs ul.types-nav li > a:focus span.select-arrow:before,
+			#buddypress .item-list-tabs ul.types-nav li > a:focus span.select-arrow:before,
+			#buddypress .item-list-tabs ul.types-nav li > a:focus {
+				color: var(--button--color-text-hover);
+			}
+
+			#buddypress .dir-navs ul.types-nav li ul.member-types li,
+			#buddypress .item-list-tabs ul.types-nav li ul.member-types li {
+				background-color: var(--global--color-white-90);
+				border-color: var(--global--color-white-90);
+			}'
+		);
+	}
 }
 add_action( 'bp_enqueue_scripts', 'types_de_membre_register_style', 1 );
 
@@ -71,7 +96,7 @@ add_action( 'bp_enqueue_scripts', 'types_de_membre_register_style', 1 );
 function types_de_membre_register_script() {
 	wp_register_script(
 		'types-de-membre',
-		sprintf( '%1$s/script%2$s.js', types_de_membre_js_url(), bp_core_get_minified_asset_suffix() ),
+		sprintf( '%s/script.js', types_de_membre_js_url() ),
 		array(),
 		types_de_membre_version(),
 		true
