@@ -96,6 +96,8 @@ function types_de_membre_update_plugin() {
 
 			// Just in case something went wrong keep the original values for a time.
 			set_site_transient( 'bp_mt_extended_terms_data', $bp_mte_types, DAY_IN_SECONDS );
+		} else {
+			$needs_version_bump = true;
 		}
 	} elseif ( types_de_membre_is_update() ) {
 		$needs_version_bump = true;
