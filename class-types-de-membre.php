@@ -11,7 +11,7 @@
  * Plugin Name:       Types de membre
  * Plugin URI:        https://github.com/imath/types-de-membre
  * Description:       Ajoute un liste déroulante pour filtrer le répertoire des membres par type.
- * Version:           2.0.0-alpha
+ * Version:           2.0.0
  * Author:            imath
  * Author URI:        https://imathi.eu
  * License:           GPL-2.0+
