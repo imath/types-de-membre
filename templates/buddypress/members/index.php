@@ -63,7 +63,7 @@ do_action( 'bp_before_directory_members_page' ); ?>
 	<form action="" method="post" id="members-directory-form" class="dir-form">
 
 		<div class="bp-nav-wrapper">
-			<div class="item-list-tabs" aria-label="<?php esc_attr_e( 'Members directory main navigation', 'types-de-membre' ); ?>" role="navigation">
+			<div class="item-list-tabs" aria-label="<?php esc_attr_e( 'Navigation principale du répertoire des membres', 'types-de-membre' ); ?>" role="navigation">
 				<ul>
 					<li class="selected" id="members-all">
 						<a href="<?php bp_members_directory_permalink(); ?>">
