@@ -2,82 +2,90 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Types de membre 2.0.0\n"
+"Project-Id-Version: Types de membre 2.0.0-alpha\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/types-de-membre\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2020-12-20T05:27:32+00:00\n"
+"PO-Revision-Date: 2020-12-20 06:28+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-12-20T05:27:32+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Domain: types-de-membre\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Plugin Name of the plugin
 msgid "Types de membre"
-msgstr ""
+msgstr "Types de membre"
 
 #. Plugin URI of the plugin
 msgid "https://github.com/imath/types-de-membre"
-msgstr ""
+msgstr "https://github.com/imath/types-de-membre"
 
 #. Description of the plugin
-msgid "Ajoute une liste déroulante pour filtrer le répertoire BuddyPress des membres par type."
+msgid ""
+"Ajoute une liste déroulante pour filtrer le répertoire BuddyPress des "
+"membres par type."
 msgstr ""
+"Adds a dropdown control to filter the BuddyPress Members directory by types."
 
 #. Author of the plugin
 msgid "imath"
-msgstr ""
+msgstr "imath"
 
 #. Author URI of the plugin
 msgid "https://imathi.eu"
-msgstr ""
+msgstr "https://imathi.eu"
 
 #: inc/templates.php:101
 msgctxt "Dropdown label"
 msgid "Types de membre"
-msgstr ""
+msgstr "Member Types"
 
 #: templates/buddypress/common/nav/directory-nav.php:18
 msgid "Menu du répertoire des membres"
-msgstr ""
+msgstr "Members directory menu"
 
 #: templates/buddypress/members/index.php:66
 msgid "Navigation principale du répertoire des membres"
-msgstr ""
+msgstr "Members directory main navigation"
 
 #. translators: %s is the total member count
 #: templates/buddypress/members/index.php:73
 msgid "Tous les membres %s"
-msgstr ""
+msgstr "All Members %s"
 
 #. translators: %s is the total friends count
 #: templates/buddypress/members/index.php:86
 msgid "Mes amis %s"
-msgstr ""
+msgstr "My Friends %s"
 
 #: templates/buddypress/members/index.php:110
 msgid "Navigation secondaire du répertoire des membres"
-msgstr ""
+msgstr "Members directory secondary navigation"
 
 #: templates/buddypress/members/index.php:123
 msgid "Classer selon :"
-msgstr ""
+msgstr "Order By:"
 
 #: templates/buddypress/members/index.php:125
 msgid "La dernière activité"
-msgstr ""
+msgstr "Last Active"
 
 #: templates/buddypress/members/index.php:126
 msgid "La date d’inscription"
-msgstr ""
+msgstr "Newest Registered"
 
 #: templates/buddypress/members/index.php:129
 msgid "Le nom (alphabétiquement)"
-msgstr ""
+msgstr "Alphabetical"
 
 #. translators: accessibility text
 #: templates/buddypress/members/index.php:149
 msgid "Répertoire des Membres"
-msgstr ""
+msgstr "Members Directory"
+
+#~ msgid "Members directory main navigation"
+#~ msgstr "Members directory main navigation"

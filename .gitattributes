@@ -5,3 +5,4 @@
 /composer.lock export-ignore
 /icon.png export-ignore
 /LICENSE export-ignore
+/phpcs.xml.dist export-ignore

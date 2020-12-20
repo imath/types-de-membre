@@ -98,7 +98,7 @@ function types_de_membre_get_directory_nav_items( $current_member_type = '' ) {
 	 */
 	$nav = apply_filters(
 		'types_de_membre_get_directory_nav_name',
-		__( 'Types de membre', 'types-de-membre' )
+		_x( 'Types de membre', 'Dropdown label', 'types-de-membre' )
 	);
 
 	$classes = array();
